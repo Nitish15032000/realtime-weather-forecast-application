@@ -1,15 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Weather forecast Application </title>
-</head>
-<body>
-   <header>realtime-weather-forecast-application</header>
-   <main></main>
-   <footer></footer>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather forecast Application</title>
 
-   <script src="script.js"></script>
-</body>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
+
+<style type="text/tailwindcss">
+   @layer utilities {
+     .content-auto {
+       content-visibility: auto;
+     }
+   }
+ </style>
+
+  </head>
+  <body>
+    <header>realtime-weather-forecast-application</header>
+    <main></main>
+    <footer></footer>
+
+    
+    <script src="script.js"></script>
+  </body>
 </html>
