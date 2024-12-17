@@ -1,5 +1,5 @@
 const API_URL = 'https://open-weather13.p.rapidapi.com/city/';
-const API_KEY = '2620a2c530msh9df81507dedb8abp1ccd95jsn400ced1375e6';
+const API_KEY = 'a29d6aa7cdmsh52dc98c8be1e333p10baacjsnf1ad1af213d7';
 const API_HOST = 'open-weather13.p.rapidapi.com';
 
 // DOM Elements

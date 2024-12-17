@@ -16,7 +16,7 @@ Setup Instructions:
       Open the index.html file in your browser.
 
 Usage:
-   Enter a city name and click Search.
+   Enter a city name and click Search. city name like as samastipur, patna, delhi ect
    OR click Use Current Location to fetch weather data.
 
 Technologies Used
