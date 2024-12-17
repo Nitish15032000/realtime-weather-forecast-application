@@ -1,6 +1,10 @@
 🌦️ Weather Forecast Application
 A simple weather dashboard that displays current weather and 5-day forecast for any city. Built using HTML, JavaScript, and Tailwind CSS with the help of OpenWeatherMap API via RapidAPI.
 
+
+live link : https://nitish15032000.github.io/realtime-weather-forecast-application/
+
+
 Setup Instructions: 
    1. Clone the repository:
    bash
