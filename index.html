@@ -15,45 +15,27 @@
     <link rel="icon" href="favicon.png" />
     <title>Weather forecast Application</title>
 
+    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              clifford: "#da373d",
-            },
-          },
-        },
-      }; 
-    </script> -->
-
-    <!-- <style type="text/tailwindcss">
-      @layer utilities {
-        .content-auto {
-          content-visibility: auto;
-        }
-      } 
-    </style> -->
   </head>
 
   <body class="bg-blue-50 text-gray-800">
     <!-- Header -->
     <header class="bg-blue-600 py-4 text-center text-white">
-      <h1 class="text-2xl font-bold">Weather Dashboard</h1>
+      <h1 class="text-2xl md:text-3xl font-bold">Weather Dashboard</h1>
     </header>
 
     <!-- Main Content -->
-    <main class="container mx-auto px-4 py-6">
+    <main class="container mx-auto px-4 py-6 flex flex-col md:flex-row gap-6">
       <!-- Search Section -->
-      <section class="bg-blue-100 rounded-lg shadow-md p-6">
+      <section class="bg-blue-100 rounded-lg shadow-md p-6 w-full md:w-1/3">
         <h2 class="text-lg font-semibold mb-4">Enter a City Name</h2>
         <div class="flex flex-col sm:flex-row items-center gap-4">
           <input
             type="text"
             id="cityInput"
             placeholder="E.g., New York, London, Tokyo"
-            class="w-full sm:w-3/4 px-4 py-2 border rounded-md focus:outline-none focus:ring focus:ring-blue-300"
+            class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring focus:ring-blue-300"
           />
           <button
             id="searchBtn"
@@ -71,15 +53,34 @@
         </button>
       </section>
 
-      <!-- Current Weather Section -->
-      <section id="currWeather" class="bg-blue-200 mt-6 rounded-lg shadow-md p-6">
-        Current Weather Section
-      </section>
+      <!-- Weather Sections -->
+      <section class="flex-1">
+        <!-- Current Weather Section -->
+        <section
+          id="currWeather"
+          class="bg-blue-200 rounded-lg shadow-md p-6 mb-6 text-center"
+        >
+          <h2 class="text-lg font-semibold mb-4">Current Weather</h2>
+          <div id="currentWeatherContent" class="text-gray-700">
+            Loading...
+          </div>
+        </section>
 
-      <!-- Next 5 days Forecast Section -->
-      <section id="forecastWeather" class="bg-blue-100 mt-6 rounded-lg shadow-md p-6">
-         <h2 class="text-lg font-semibold mb-4">5-Days Forecast</h2>
-        <div class="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-5 gap-4">
+        <!-- 5-Day Forecast Section -->
+        <section
+          id="forecastWeather"
+          class="bg-blue-100 rounded-lg shadow-md p-6"
+        >
+          <h2 class="text-lg font-semibold mb-4 text-center">
+            5-Days Forecast
+          </h2>
+          <div
+            id="forecastContent"
+            class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4"
+          >
+            Loading...
+          </div>
+        </section>
       </section>
     </main>
 
@@ -88,6 +89,7 @@
       <p>&copy; 2024 Weather Dashboard. All rights reserved.</p>
     </footer>
 
-    
+    <!-- JavaScript -->
+    <script src="script.js"></script>
   </body>
 </html>
