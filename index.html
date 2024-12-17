@@ -37,72 +37,57 @@
     </style> -->
   </head>
 
-  
-<body class="bg-blue-50 text-gray-800">
-  <!-- Header -->
-  <header class="bg-blue-600 py-4 text-center text-white">
-    <h1 class="text-2xl font-bold">Weather Dashboard</h1>
-  </header>
+  <body class="bg-blue-50 text-gray-800">
+    <!-- Header -->
+    <header class="bg-blue-600 py-4 text-center text-white">
+      <h1 class="text-2xl font-bold">Weather Dashboard</h1>
+    </header>
 
-  <!-- Main Content -->
-  <main class="container mx-auto px-4 py-6">
-    <!-- Search Section -->
-    <section class="bg-blue-100 rounded-lg shadow-md p-6">
-      <h2 class="text-lg font-semibold mb-4">Enter a City Name</h2>
-      <div class="flex flex-col sm:flex-row items-center gap-4">
-        <input
-          type="text"
-          id="cityInput"
-          placeholder="E.g., New York, London, Tokyo"
-          class="w-full sm:w-3/4 px-4 py-2 border rounded-md focus:outline-none focus:ring focus:ring-blue-300"
-        />
-        <button id="searchBtn" class="bg-blue-500 text-white px-6 py-2 rounded-md hover:bg-blue-600 w-full sm:w-auto">
-          Search
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-6">
+      <!-- Search Section -->
+      <section class="bg-blue-100 rounded-lg shadow-md p-6">
+        <h2 class="text-lg font-semibold mb-4">Enter a City Name</h2>
+        <div class="flex flex-col sm:flex-row items-center gap-4">
+          <input
+            type="text"
+            id="cityInput"
+            placeholder="E.g., New York, London, Tokyo"
+            class="w-full sm:w-3/4 px-4 py-2 border rounded-md focus:outline-none focus:ring focus:ring-blue-300"
+          />
+          <button
+            id="searchBtn"
+            class="bg-blue-500 text-white px-6 py-2 rounded-md hover:bg-blue-600 w-full sm:w-auto"
+          >
+            Search
+          </button>
+        </div>
+        <p class="text-center my-4">or</p>
+        <button
+          id="locationBtn"
+          class="bg-gray-700 text-white px-4 py-2 rounded-md hover:bg-gray-800 w-full"
+        >
+          Use Current Location
         </button>
-      </div>
-      <p class="text-center my-4">or</p>
-      <button id="locationBtn" class="bg-gray-700 text-white px-4 py-2 rounded-md hover:bg-gray-800 w-full">
-        Use Current Location
-      </button>
-    </section>
+      </section>
 
-    <!-- Current Weather Section -->
-    <section class="bg-blue-200 mt-6 rounded-lg shadow-md p-6">
-      <h2 class="text-xl font-semibold mb-4">London (2024-04-23)</h2>
-      <div class="flex flex-col md:flex-row items-center justify-between">
-        <div>
-          <p class="text-lg">Temperature: <strong>7.06°C</strong></p>
-          <p>Wind: <strong>2.85 m/s</strong></p>
-          <p>Humidity: <strong>88%</strong></p>
-        </div>
-        <div class="text-4xl mt-4 md:mt-0">
-          <span>☔</span>
-        </div>
-      </div>
-    </section>
+      <!-- Current Weather Section -->
+      <section id="currWeather" class="bg-blue-200 mt-6 rounded-lg shadow-md p-6">
+        Current Weather Section
+      </section>
 
-    <!-- Next 7 days Forecast Section -->
-    <section class="bg-blue-100 mt-6 rounded-lg shadow-md p-6">
-      <h2 class="text-lg font-semibold mb-4">7-Days Forecast</h2>
-      <div class="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-5 gap-4">
-        <!-- Forecast Card -->
-        <div class="bg-gray-100 p-4 rounded-md text-center shadow">
-          <p class="font-semibold">2024-04-24</p>
-          <div class="text-3xl my-2">☁</div>
-          <p>Temp: <strong>5.67°C</strong></p>
-          <p>Wind: <strong>2.77 m/s</strong></p>
-          <p>Humidity: <strong>76%</strong></p>
-        </div>
-        <!-- Repeat similar blocks for other days -->
-         
-        
-      </div>
-    </section>
-  </main>
+      <!-- Next 5 days Forecast Section -->
+      <section id="forecastWeather" class="bg-blue-100 mt-6 rounded-lg shadow-md p-6">
+         <h2 class="text-lg font-semibold mb-4">5-Days Forecast</h2>
+        <div class="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-5 gap-4">
+      </section>
+    </main>
 
-  <!-- Footer -->
-  <footer class="bg-gray-900 text-gray-100 py-4 text-center">
-    <p>&copy; 2024 Weather Dashboard. All rights reserved.</p>
-  </footer>
-</body>
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-100 py-4 text-center">
+      <p>&copy; 2024 Weather Dashboard. All rights reserved.</p>
+    </footer>
+
+    
+  </body>
 </html>
